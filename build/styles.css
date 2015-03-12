@@ -1,0 +1,230 @@
+.panel {
+  max-width: 70%; }
+
+.push {
+  width: 100%;
+  height: 650px; }
+
+.navbar {
+  background-color: #1e1e1e;
+  border: 0px solid rgba(0, 0, 0, 0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2; }
+  .navbar img {
+    width: 160px;
+    height: 160px;
+    border: 2px solid rgba(30, 30, 30, 0.8);
+    border-radius: 0px 0px 20px 0px;
+    box-shadow: 1px 2px rgba(30, 30, 30, 0.4); }
+
+body {
+  background-color: white;
+  color: rgba(10, 10, 10, 0.7);
+  font-family: 'Cantarell', sans-serif; }
+
+/*
+.modal-content {
+	background-color:$container-bg;
+}
+
+.modal-header, .modal-footer{
+	background-color:rgba($bg,1);
+}
+*/
+.jumbo-container {
+  background-image: url('../build/books.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  text-align: center;
+  display: block;
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-align: center;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-align: center;
+  display: -ms-flexbox;
+  display: flexbox;
+  flex-pack: center;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  .jumbo-container .span-arch-type, .jumbo-container span:nth-child(1), .jumbo-container span:nth-child(2), .jumbo-container span:nth-child(3), .jumbo-container span:nth-child(4) {
+    color: white;
+    padding: 5px;
+    -ms-transform: rotate(-10deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-10deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    /* IE 9 */
+    -webkit-transform: rotate(-10deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+    display: inline-block;
+    font-size: 150%;
+    width: 180px;
+    margin-left: -30px; }
+  .jumbo-container span:nth-child(1) {
+    background-color: #e43725;
+    border-bottom: 2px solid #b20500; }
+  .jumbo-container span:nth-child(2) {
+    background-color: #ffed1c;
+    border-bottom: 2px solid #cdbb00; }
+  .jumbo-container span:nth-child(3) {
+    background-color: #1d6feb;
+    border-bottom: 2px solid #003db9; }
+  .jumbo-container span:nth-child(4) {
+    background-color: #19ee2c;
+    border-bottom: 2px solid #00bc00; }
+
+.lower-nav {
+  background-color: #1e1e1e;
+  height: 80px;
+  clear: both;
+  text-align: center;
+  position: relative;
+  margin: 0px auto 20px;
+  width: 100%;
+  border: 0px solid rgba(0, 0, 0, 0);
+  border-bottom: 1px solid rgba(130, 130, 130, 0.3); }
+  .lower-nav .lower-nav-link, .lower-nav .myhobbies, .lower-nav .myit, .lower-nav .myeducation, .lower-nav .about {
+    height: 100%;
+    line-height: 600%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgba(0, 0, 0, 0);
+    font-size: 150%;
+    transition: background-color 0.7s;
+    transition: color 0.7s;
+    text-decoration: none;
+    width: 128px; }
+  .lower-nav .lower-nav-link:hover, .lower-nav .myhobbies:hover, .lower-nav .myit:hover, .lower-nav .myeducation:hover, .lower-nav .about:hover {
+    background-color: rgba(80, 80, 80, 0.1);
+    color: dimgray;
+    text-decoration: none; }
+  .lower-nav .lower-nav-link-after:hover {
+    background-color: rgba(80, 80, 80, 0.1);
+    color: rgba(10, 10, 10, 0.7);
+    text-decoration: none; }
+  .lower-nav .myhobbies {
+    background-image: url('../images/myhobbies2.svg'); }
+  .lower-nav .myit {
+    background-image: url('../images/it.svg'); }
+  .lower-nav .myeducation {
+    background-image: url('../images/myeducation2.svg'); }
+  .lower-nav .about {
+    background-image: url('../images/me2.svg'); }
+
+#brand-img {
+  position: absolute; }
+
+@media only screen and (max-width: 550px) {
+  .main-content-container {
+    font-size: 70%; }
+
+  .jumbo-container {
+    font-size: 50%; }
+
+  .jumbo-container span {
+    width: 120px !important; }
+
+  #brand-img {
+    width: 90px !important;
+    height: auto; }
+ }
+
+@media only screen and (max-width: 790px) {
+  h3 {
+    font-size: 140%; }
+
+  .lower-nav-link, .lower-nav .myhobbies, .lower-nav .myit, .lower-nav .myeducation, .lower-nav .about {
+    width: 20%;
+    font-size: 80%;
+    line-height: 1200%; }
+
+  #brand-img {
+    width: 120px;
+    height: auto; }
+ }
+
+.lower-container {
+  width: 100%;
+  margin-bottom: 5%;
+  margin-top: 2%;
+  clear: both;
+  display: inline-block; }
+  .lower-container .title-text {
+    display: inline-block;
+    color: rgba(10, 10, 10, 0.7);
+    padding: 15px;
+    font-size: 350%;
+    font-family: 'Fjalla One', sans-serif; }
+
+#scrolltop {
+  background-image: url(../images/uparrow.svg);
+  width: 110px;
+  height: 80px;
+  bottom: 0;
+  right: 10px;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(230, 230, 230, 0.1);
+  background-position: center;
+  display: none;
+  background-repeat: no-repeat; }
+
+.scrolltop {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  padding: 1%;
+  display: none; }
+  .scrolltop:hover {
+    cursor: pointer;
+    color: rgba(0, 0, 0, 0.6); }
+
+#scrolltop:hover {
+  cursor: pointer; }
+
+.text-container {
+  margin: 0 auto;
+  margin-left: 1%;
+  font-size: 150%; }
+
+.fix {
+  height: 80px;
+  width: 100%;
+  display: none; }
+
+footer {
+  margin-top: 15%;
+  width: 100%;
+  clear: both;
+  background-color: #1e1e1e;
+  min-height: 80px;
+  color: rgba(255, 255, 255, 0.9);
+  text-align: left; }
+  footer p {
+    padding: 15px 0px 0px 5px; }
+
+.main-content-container {
+  height: 100%;
+  width: 100%;
+  padding: 2%;
+  display: inline-block; }
+
+.hidden {
+  display: none !important; }
