@@ -25,10 +25,10 @@ $(window).scroll(function(){
   if(position >= breakPoint){
 
     if(width < 980){
-        $("#brand-img").fadeOut();
-      }
+      $("#brand-img").fadeOut();
+    }
 
-  
+
 
 
     $("#lower-nav").css({
@@ -54,27 +54,28 @@ $(window).scroll(function(){
   } else {
 
 
-    if(width < 980){
+    /*if(width < 980){
         $("#brand-img").show();
-      }
+      }*/
 
+      $("#brand-img").show();
 
-    $("#lower-nav").css({
-      'background-color':'rgba(30,30,30,1)',
-      'top':'none',
-      'position':'relative',
+      $("#lower-nav").css({
+        'background-color':'rgba(30,30,30,1)',
+        'top':'none',
+        'position':'relative',
 
-    });
+      });
 
-    $(".fix").css({
-      'display':'none'
-    });
+      $(".fix").css({
+        'display':'none'
+      });
 
       $("div#lower-nav a").each(function(){
-      $(this).removeClass("lower-nav-link-after");
-    });
+        $(this).removeClass("lower-nav-link-after");
+      });
 
-  }
+    }
 
   /**if(position > 210){
     $("#main-nav").css({'background-color':'rgba(250,250,250,1)'});
@@ -107,9 +108,25 @@ $(window).scroll(function(){
   if(position > 690){
     $(".scrolltop").fadeIn();
   } else {
-     $(".scrolltop").hide();
+   $(".scrolltop").hide();
+ }
+}); 
+
+
+$(window).on("resize", function(){
+
+  var width = $(window).width();
+  var position = $(window).scrollTop();
+  var jumboHeight = $(".jumbo-container").height();
+  var lowerNavHeight = $("#lower-nav").height();
+  var breakPoint = jumboHeight - lowerNavHeight;
+  if(width < 980 && position >= breakPoint){
+    $("#brand-img").fadeOut();
+  } else{
+    $("#brand-img").show();
   }
-    }); 
+
+});
 /* ========================================================================
  * Bootstrap: affix.js v3.1.1
  * http://getbootstrap.com/javascript/#affix
