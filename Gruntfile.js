@@ -8,17 +8,12 @@ module.exports = function(grunt) {
             // 2. Configuration for concatinating files goes here.
             dist: {
                 src: [
-            //'javascripts/jquery-1.11.2.min.js',
-            //'javascripts/bootstrap.js',
-            //'javascripts/bootstrap/*.js',
-            //'javascripts/*.js',
             'javascripts/bootstrap.js',
             'javascripts/helper.js',
             'javascripts/bootstrap/*.js'
             ],
             dest: 'build/production.js',
         }
-
 
     },
 
@@ -87,7 +82,7 @@ scripts: {
 },
 
 html: {
-    files: ['index.html'],
+    files: ['index-dev.html'],
     tasks: ['htmlmin'],
     options: {
         spawn: false,
